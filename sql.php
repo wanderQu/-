@@ -14,7 +14,7 @@ funtion createDBSql($dbName){
 }
 
 funtion deleteDBSql($dbName){
-	return "delete database ".$dbName;
+	return "drop database ".$dbName;
 }
 
 funtion insertSql(){

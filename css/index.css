@@ -1,0 +1,104 @@
+/* body:after{
+            content:'';
+            display: block;
+            visibility:hidden;
+            clear:both;
+                }
+        #le{
+            float:left;
+            width:100px;
+            height:100px;
+            background:#ccc;
+            margin-right:10px;
+            animation:tr 2s infinite alternate;
+        }
+        #ri{
+            float: right;
+            width:100px;
+            height:100px;
+            background:#6e6e6e;
+            margin-left:10px;
+            animation:tr 2s infinite alternate;
+        }
+        #center{
+            height:100px;
+            overflow:hidden;
+            word-break:break-all;
+            white-space: pre-wrap;
+            background-color:#343434;
+        }
+        @keyframes tr{
+            0%{
+                width:100px;
+            }
+            100%{
+                width:300px;
+            }
+        }*/
+body{
+    background-color: rgb(244,244,244);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+    background-image: url("../src/919534365da310d1ca7322f66f7cbc0b.jpg");
+}
+.loging{
+    background-color: rgba(255,255,255,0.7);
+    margin:0 auto;
+    margin-top: 5%;
+    width: 500px;
+    height: 100%;
+    min-width: 500px;
+    border-radius: 30px;
+}
+.logingBox{
+    padding: 30px;
+}
+.title{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+    border-bottom: 3px solid black;
+}
+.registTitle{
+    text-align: center;
+    font-size: 2rem;
+}
+.FORM{
+    padding:30px;
+}
+#ID,#PS,#BT,#regist{
+    width: 100%;
+    height: 60px;
+    line-height: 40px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    border:none;
+    /*border-radius: 30px;*/
+}
+#BT,#regist{
+    background-color: #1f4f82;
+    height: 70px !important;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color:white;
+}
+#BT:hover,#regist:hover {background-color: #017cba}
+.regist{
+    background-color: rgba(255,255,255,0.7);
+    margin:0 auto;
+    margin-top:5px;
+    width: 500px;
+    height: 100%;
+    min-width: 500px;
+    border-radius: 30px;
+}
+.registBox{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}

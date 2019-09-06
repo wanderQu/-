@@ -38,7 +38,7 @@
 body{
     background-color: rgb(244,244,244);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-position: center 0;

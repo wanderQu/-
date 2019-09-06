@@ -12,7 +12,7 @@ function CheckPassword(){
     else {
         //系统初始化
         if(name == "admin" && pswd == "admin"){
-
+            window.open('admin.html','_self');
         }
         //直接读取数据库信息
         let dbName = "";

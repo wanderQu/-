@@ -1,27 +1,21 @@
 function CheckPassword(){
     let name = document.getElementById("ID").value;
-    let pswd = document.getElementById("PS").value;
-    if(name ===""){
+    let password = document.getElementById("PS").value;
+    if(name === ""){
         alert("请输入账号");
-        return false;
     }
-    else if(pswd === "") {
+    else if(password === "") {
         alert("请输入密码");
-        return false;
     }
     else {
         //系统初始化
-        if(name == "admin" && pswd == "admin"){
-            window.open('admin.html','_self');
+        if(name === "admin" && password === "admin"){
+            ChangeFrame("admin");
         }
         //直接读取数据库信息
-        let dbName = "";
-        let dbPswd = "";
     }
 }
-function ReadDB(dbName,dbPswd,dbSQL){
 
-}
 // window.onresize = window.onload = function()
 // {
 //     var w,h

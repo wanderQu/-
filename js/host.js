@@ -6,5 +6,6 @@ function ChangeFrame(dev){
         src = "../home/home.html";
     else if(dev === "admin")
         src = "../home/admin.html";
+    document.getElementById("frame").contentWindow.location.reload();
     document.getElementById("frame").src = src;
 }

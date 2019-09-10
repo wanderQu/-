@@ -10,7 +10,9 @@ function CheckPassword(){
     else {
         //系统初始化
         if(name === "admin" && password === "admin"){
-            ChangeFrame("admin");
+            // ChangeFrame("admin");
+            window.open("home/admin.html");
+            window.close();
         }
         //直接读取数据库信息
     }

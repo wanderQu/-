@@ -2,7 +2,8 @@
 html,body{
     margin: 0 auto;
     height: 100% ;
-    background-color: rgb(244,244,244);
+    background-color: rgb(244,244,244)!important;
+
 }
 .title {
     width: 100%;
@@ -65,4 +66,11 @@ html,body{
     width: 98%;
     height: 100%;
     background-color: white;
+}
+.user{
+    background-color: #0a67fb;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
 }

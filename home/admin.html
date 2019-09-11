@@ -5,25 +5,34 @@
     <title>OpenVpn</title>
     <script src="../js/host.js" type="text/javascript"></script>
     <link rel ="stylesheet" type ="text/css" href ="../css/host.css">
+    <link rel="stylesheet" href="../zui-1.9.1-dist/dist/css/zui.min.css">
+    <script src="../zui-1.9.1-dist/dist/lib/jquery/jquery.js"></script>
+    <script src="../zui-1.9.1-dist/dist/js/zui.min.js"></script>
 </head>
 <body>
     <div class = "title">
-        <img class="logo"></img>
-        <div class="person"></div>
+        <img id="logo" src="../src/joinCheer/logo.png">
     </div>
     <div class = "content">
         <div class = "menu">
-            <div class="childMenu" id="home">首页</div>
-            <div class="childMenu" id="normal">常用网址</div>
-            <div class="childMenu" id="faq">久其FAQ</div>
-            <div class="childMenu" id="system">系统管理</div>
+            <div class="childMenu" id="home" onclick="ChangeChildFrame('home')">首页</div>
+            <div class="childMenu" id="normal" onclick="ChangeChildFrame('normal')">常用网址</div>
+            <div class="childMenu" id="faqJQ" onclick="ChangeChildFrame('faqJQ')">久其FAQ</div>
+            <div class="childMenu" id="system" onclick="ChangeChildFrame('system')">系统管理</div>
         </div>
         <div class = "context">
-            <iframe class="childFrame">
-
+            <div class = "float dropdown dropdown-hover">
+                <div class="user" data-toggle="dropdown">瞿</div>
+                <ul class="dropdown-menu">
+                    <li><a href="###">操作</a></li>
+                    <li><a href="###">另一个操作</a></li>
+                    <li><a href="###">更多操作</a></li>
+                </ul>
+            </div>
+            <iframe class="childFrame" id="childFrame" src="home.html">
             </iframe>
+
         </div>
     </div>
 </body>
 </html>
-<!--meishansi\yibins\xinhuawenxuan\-->

@@ -12,17 +12,15 @@
 <body>
     <div class = "title">
         <img id="logo" src="../src/joinCheer/logo.png">
-        <img id="User" src="../src/User.png">
     </div>
     <div class = "content">
         <div class = "menu">
-            <div class="childMenu" id="home">首页</div>
-            <div class="childMenu" id="normal">常用网址</div>
-            <div class="childMenu" id="faqJQ">久其FAQ</div>
+            <div class="childMenu" id="home" onclick="ChangeChildFrame('home')">首页</div>
+            <div class="childMenu" id="normal" onclick="ChangeChildFrame('normal')">常用网址</div>
+            <div class="childMenu" id="faqJQ" onclick="ChangeChildFrame('faqJQ')">久其FAQ</div>
         </div>
         <div class = "context">
-            <iframe class="childFrame">
-
+            <iframe class="childFrame" id="childFrame" src="home.html">
             </iframe>
         </div>
     </div>

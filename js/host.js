@@ -10,8 +10,8 @@ function ChangeChildFrame(dev){
         src = "../home/normal.html";
     else if(dev==="faqJQ")
         src = "../home/faqJQ.html";
-    else if(dev === "system")
-        src = "../home/system.html";
+    else if(dev === "userManage")
+        src = "../home/userManage.php";
     document.getElementById("childFrame").src = src;
 }
 

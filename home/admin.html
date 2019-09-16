@@ -12,26 +12,27 @@
 <body>
     <div class = "title">
         <img id="logo" src="../src/joinCheer/logo.png">
+        <span class="user">
+            <span class="ChangPassword">信息变更</span>
+            <span style="width: 10px;height:30px;"></span>
+            <span class="logOut">注销</span>
+        </span>
     </div>
     <div class = "content">
         <div class = "menu">
-            <div class="childMenu" id="home" onclick="ChangeChildFrame('home')">首页</div>
-            <div class="childMenu" id="normal" onclick="ChangeChildFrame('normal')">常用网址</div>
-            <div class="childMenu" id="faqJQ" onclick="ChangeChildFrame('faqJQ')">久其FAQ</div>
-            <div class="childMenu" id="system" onclick="ChangeChildFrame('system')">系统管理</div>
+            <span class="childMenu" id="home" onclick="ChangeChildFrame('home')">首页</span>
+            <span class="childMenu" id="normal" onclick="ChangeChildFrame('normal')">常用网址</span>
+            <span class="childMenu" id="faqJQ" onclick="ChangeChildFrame('faqJQ')">久其FAQ</span>
+            <span class="dropdown dropdown-hover">
+                <span class="childMenu" data-toggle="dropdown">系统管理<span class="caret"></span></span>
+                <ul class="dropdown-menu" style="padding-left: 10px;padding-right: 10px">
+                    <li><a id="userManage" onclick="ChangeChildFrame('userManage')">用户管理</a></li>
+                </ul>
+            </span>
         </div>
         <div class = "context">
-            <div class = "float dropdown dropdown-hover">
-                <div class="user" data-toggle="dropdown">瞿</div>
-                <ul class="dropdown-menu">
-                    <li><a href="###">操作</a></li>
-                    <li><a href="###">另一个操作</a></li>
-                    <li><a href="###">更多操作</a></li>
-                </ul>
-            </div>
             <iframe class="childFrame" id="childFrame" src="home.html">
             </iframe>
-
         </div>
     </div>
 </body>

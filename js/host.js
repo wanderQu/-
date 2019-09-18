@@ -14,7 +14,10 @@ function ChangeChildFrame(dev){
         src = "../home/userManage.php";
     document.getElementById("childFrame").src = src;
 }
-
+let list = document.getElementsByClassName('.icon-times');
+for(let i in list){
+    list[i].onclick = alert("a");
+}
 // function ClickDiv() {
 //     let home = document.getElementById("home");
 //     let normal = document.getElementById("normal");

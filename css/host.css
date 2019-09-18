@@ -95,7 +95,13 @@ html,body{
  }
 .del:before{
     top: 0px !important;
+    /*left: 35% !important;*/
 }
 .del:after{
     top:1px !important;
+    /*left: 35% !important;*/
+}
+.icon:before{
+    width: 100% !important;
+    height: 20px;
 }

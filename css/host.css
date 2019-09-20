@@ -105,3 +105,18 @@ html,body{
     width: 100% !important;
     height: 20px;
 }
+.btn{
+    width: 140px;
+    border-radius: 10px;
+    background-color: #0a67fb;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float:right;
+}

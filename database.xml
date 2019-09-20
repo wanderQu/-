@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<JoinCheer>
-    <datasource>
-        <databaseName>
-            JoinCheer
-        </databaseName>
-        <userName>
-            ChengDu
-        </userName>
-        <password>
-            oracle
-        </password>
-    </datasource>
-</JoinCheer>
+    <JoinCheer>
+        <DATABASE>
+            <name>oracle</name>
+            <connect>127.0.0.1:1521/orcl</connect>
+        </DATABASE>
+        <DBA>
+            <name>system</name>
+            <password>system</password>
+        </DBA>
+        <USER>
+            <name>ChengDu</name>
+            <password>oracle</password>
+            <tableSpace>CDJQ</tableSpace>
+        </USER>
+    </JoinCheer>

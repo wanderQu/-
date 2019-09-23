@@ -1,4 +1,31 @@
 <?php
+function XMLDBWrite($db,$dbCon,$dbName,$dbPswd,$UserName,$UserPswd,$TableSpace,$path="",$fileName=""){
+    if($path === "")
+        $path = "../";
+    if($fileName === "")
+        $fileName="database.xml";
+    $xml_data=
+        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+    <JoinCheer>
+        <DATABASE>
+            <name>".$db."</name>
+            <connect>".$dbCon."</connect>
+        </DATABASE>
+        <DBA>
+            <name>".$dbName."</name>
+            <password>".$dbPswd."</password>
+        </DBA>
+        <USER>
+            <name>".$UserName."</name>
+            <password>".$UserPswd."</password>
+            <tableSpace>".$TableSpace."</tableSpace>
+        </USER>
+    </JoinCheer>";
+    $xml_file = fopen($path.$fileName,"w");
+    fwrite($xml_file,$xml_data);
+    fclose($xml_file);
+    return $xml_data;
+}
 function CheckDBStatus(){
     $db="";
     $dbCon="";
@@ -32,28 +59,9 @@ function CheckDBStatus(){
         $userName="ChengDu";
 //        数据库用户密码
         $userPswd="oracle";
-//          表空间
+//        表空间
         $tableSpace="CDJQ";
-        $xml_data=
-            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-    <JoinCheer>
-        <DATABASE>
-            <name>".$db."</name>
-            <connect>".$dbCon."</connect>
-        </DATABASE>
-        <DBA>
-            <name>".$dbName."</name>
-            <password>".$dbPswd."</password>
-        </DBA>
-        <USER>
-            <name>".$userName."</name>
-            <password>".$userPswd."</password>
-            <tableSpace>".$tableSpace."</tableSpace>
-        </USER>
-    </JoinCheer>";
-        $xml_file = fopen("../database.xml","w");
-        fwrite($xml_file,$xml_data);
-        fclose($xml_file);
+        XMLDBWrite($db,$dbCon,$dbName,$dbPswd,$userName,$userPswd,$tableSpace);
     }
     // 查询数据库是否存在，不存在就创建数据库内容
     if(strtoupper($db)==="ORACLE")

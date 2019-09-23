@@ -11,7 +11,8 @@ function CheckPassword(){
         //系统初始化
         if(name === "admin" && password === "admin"){
             // ChangeFrame("admin");
-            window.open("home/admin.html");
+            window.opener=null;
+            window.open("home/admin.html","_self");
             window.close();
         }
         //直接读取数据库信息

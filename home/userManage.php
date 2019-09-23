@@ -28,6 +28,26 @@
     <div id="grid" class="datagrid datagrid-striped" data-ride="datagrid" ></div>
 <?php
 include '../database/oracle.php';
+error_reporting(0);//不显示所有提示
+error_reporting(7);//只显示严重错误提示
+//下列常见错误
+//————————————————
+//1、    E_ERROR 致命的运行时错误
+//2、    E_WARNING 运行时警告(非致命性错误)
+//4、    E_PARSE 编译时解析错误
+//8、    E_NOTICE 运行时提醒(经常是bug，也可能是有意的)
+//16、   E_CORE_ERROR PHP启动时初始化过程中的致命错误
+//32、   E_CORE_WARNING PHP启动时初始化过程中的警告(非致命性错)
+//64、   E_COMPILE_ERROR 编译时致命性错
+//128、  E_COMPILE_WARNING 编译时警告(非致命性错)
+//256、  E_USER_ERROR 用户自定义的致命错误
+//512、  E_USER_WARNING 用户自定义的警告(非致命性错误)
+//1024、 E_USER_NOTICE 用户自定义的提醒(经常是bug，也可能是有意的)
+//2048、 E_STRICT 编码标准化警告(建议如何修改以向前兼容)
+//4096、 E_RECOVERABLE_ERROR 接近致命的运行时错误，若未被捕获则视同E_ERROR
+//6143、 E_ALL 除E_STRICT外的所有错误(PHP6中为8191,即包含所有)
+//————————————————
+
 CheckDBStatus();
 echo"
 <script>

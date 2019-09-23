@@ -14,9 +14,7 @@ function ChangeChildFrame(dev){
         src = "../home/userManage.php";
     document.getElementById("childFrame").src = src;
 }
-function f() {
-    alert("a");
-}
+
 // function ClickDiv() {
 //     let home = document.getElementById("home");
 //     let normal = document.getElementById("normal");
